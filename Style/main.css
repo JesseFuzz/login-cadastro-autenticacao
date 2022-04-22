@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&family=Bebas+Neue&family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Akshar', sans-serif;
+}
+
+body{
+    background-image: url(https://cdn1.unasp.br/home/2020/09/22093002/purple-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 300px;
+}
+
+.card{
+    /*  número cria opacidade   */
+    background-color: #ffffff80;
+    padding: 30px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 2px #00000060; 
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #272262;
+}
+
+.label-float input{
+    width: 100%;
+    padding: 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #272262;
+    background-color: transparent;
+    outline: none; /*  linha do quadrado do input  */
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    border-radius: 0px;
+}
+
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float input:focus{
+    border-bottom: 2px solid red;
+}
+
+.label-float label{
+    color: red;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
+.label-float input:focus + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: #4038a0;
+}
+
+button{
+    background-color: transparent;
+    border-color: blue;
+    color: blue;
+    padding: 7px;
+    font-weight: 12pt;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all .5s ease-out;
+}
+
+button:hover{
+    background-color: #272262;
+    color: white;
+}
+
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+p{
+    font-size: 14pt;
+    text-align: center;
+    color: #272262;
+}
+
+a{
+    color: #7a3077;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .3s ease-out;
+}
+
+a:hover{
+    color: #272262;
+}
